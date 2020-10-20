@@ -9,6 +9,10 @@ body, main, header, nav, footer, div, ul, li, dl, dt, dd, a, h1, p, span, label 
   font-size: 14px;
 }
 
+body {
+  width: 100%;
+}
+
 header {
   position: relative;
 }
@@ -435,7 +439,7 @@ section .more:hover.more::after {
 }
 
 #salon dd span:first-child {
-  font-size: 6px;
+  font-size: 9px;
   color: #888;
   text-align: right;
   width: 20%;
@@ -503,6 +507,7 @@ section .more:hover.more::after {
   background: #fff;
   opacity: .8;
   transition: transform ease-in-out .2s;
+  user-select: none;
 }
 
 #style li span:nth-child(1) {
@@ -597,7 +602,7 @@ section .more:hover.more::after {
 }
 
 #head_spa {
-  display: flex;
+  /* display: flex; */
   position: relative;
   width: 65%;
   margin-bottom: 150px;
@@ -914,6 +919,10 @@ footer li {
   left: -12px;
 }
 
+.sp {
+  display: none;
+}
+
 @media (max-width: 1024px) {
 
   section a.right {
@@ -1050,15 +1059,23 @@ footer li {
     width: auto;
     margin-top: min(60px, 10%);
   }
-
+/* 
   #head_spa img {
     width: min(80%, 393px);
     top: 70%;
-    right: 3%;
-  }
+    right: 0;
+  } */
 
   .staff li {
     margin-bottom: 20px;
+  }
+
+  .staff1_img::before, .staff1_img::after {
+    display: none; 
+  }
+
+  .staff2_img::before, .staff2_img::after {
+    display: none;
   }
 
   #blog ul {
@@ -1094,6 +1111,14 @@ footer li {
     right: 8%;
   }
 
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -1109,7 +1134,7 @@ footer li {
   #head_spa {
     margin-bottom: max(10%, 240px);
   }
-  
+
   #head_spa>div {
     width: 100%;
     padding: 50px;
@@ -1117,5 +1142,19 @@ footer li {
 
   #head_spa img {
     top: 78%;
+  }
+
+
+  #staff {
+    width: 90%;
+  }
+  
+  .staff li {
+    width: 120px;
+    height: 120px;
+  }
+
+  .staff li img {
+    width: 120px;
   }
 }
