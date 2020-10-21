@@ -449,6 +449,7 @@ section .more:hover.more::after {
 
 #salon dd span:last-child {
   text-align: left;
+  width: 80%;
 }
 
 #salon img {
@@ -934,7 +935,7 @@ footer li {
   }
 
   section {
-    padding-top: 25%;
+    padding-top: 20%;
   }
 
   #main_nav {
@@ -1059,12 +1060,11 @@ footer li {
     width: auto;
     margin-top: min(60px, 10%);
   }
-/* 
+
   #head_spa img {
-    width: min(80%, 393px);
-    top: 70%;
-    right: 0;
-  } */
+    width: min(80%, 380px);
+    top: 74%;
+  }
 
   .staff li {
     margin-bottom: 20px;
@@ -1141,6 +1141,7 @@ footer li {
   }
 
   #head_spa img {
+    width: min(80%, 240px);
     top: 78%;
   }
 
@@ -1148,7 +1149,7 @@ footer li {
   #staff {
     width: 90%;
   }
-  
+
   .staff li {
     width: 120px;
     height: 120px;
