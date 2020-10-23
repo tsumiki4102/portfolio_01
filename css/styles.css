@@ -175,7 +175,7 @@ dt {
 }
 
 #main_visual h1 {
-  font-size: clamp(76px, 1rem + 9vw, 120px);
+  font-size: 120px;
   color: #000;
   position: absolute;
   z-index: -1;
@@ -198,7 +198,7 @@ dt {
   content: 'Radiant';
   font-family: 'DM Mono', monospace;
   position: absolute;
-  font-size: clamp(76px, 1rem + 9vw, 120px);
+  font-size: 120px;
   color: #fff;
   z-index: 1;
   left: -15vw;
@@ -208,7 +208,7 @@ dt {
 }
 
 #main_visual h1:nth-child(2) {
-  font-size: clamp(32px, 1rem + 3vw, 54px);
+  font-size: 54px;
   color: #000;
   position: absolute;
   z-index: -1;
@@ -224,7 +224,7 @@ dt {
   content: 'Beauty & Relax';
   font-family: 'DM Mono', monospace;
   position: absolute;
-  font-size: clamp(32px, 1rem + 3vw, 54px);
+  font-size: 54px;
   color: #fff;
   z-index: 1;
   left: -14.7vw;
@@ -1145,6 +1145,16 @@ footer li {
 
   h1 span {
     font-size: 12px;
+  }
+
+  #main_visual h1, .logo2::after {
+    font-size: 78px;
+    top: 40vh;
+  }
+
+  #main_visual h1:nth-child(2), .logo3::after {
+    font-size: 32px;
+    top: 55vh
   }
 
   #salon dt span {
