@@ -1219,4 +1219,13 @@ footer li {
   #blog {
     margin-bottom: 100px;
   }
+
+  #blog li {
+    text-align: left;
+  }
+
+  #blog li span {
+    display: block;
+    margin: 0;
+  }
 }
