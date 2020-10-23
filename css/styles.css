@@ -945,13 +945,13 @@ footer li {
   #main_nav_sp {
     display: block;
     position: fixed;
-    right: -50vw;
+    right: -100vw;
     z-index: 9;
     background: #000;
     opacity: .8;
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
-    padding: 60px 30px;
+    padding: 90px 30px;
     transition: all .3s;
   }
 
@@ -1070,12 +1070,28 @@ footer li {
     margin-bottom: 20px;
   }
 
+  .staff li img {
+    filter: grayscale(0);
+  }
+
   .staff1_img::before, .staff1_img::after {
     display: none; 
   }
 
   .staff2_img::before, .staff2_img::after {
     display: none;
+  }
+
+  #staff h2 {
+    color: #fff;
+    font-family: 'DM Mono', monospace;
+    background: linear-gradient(90deg, #111, #fff);
+    font-size: 14px;
+    letter-spacing: 1px;
+    width: 80%;
+    line-height: 1.7;
+    padding-left: 10px;
+    margin-bottom: 60px;
   }
 
   #blog ul {
@@ -1131,6 +1147,38 @@ footer li {
     font-size: 12px;
   }
 
+  #salon dt span {
+    font-size: 18px;
+  }
+
+  #style li span:nth-child(1) {
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+  }
+
+  #style li span:nth-child(2) {
+    top: 10px;
+    right: 10px;
+    height: calc(100% - 20px);
+  }
+
+  #style li span:nth-child(3) {
+    bottom: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+  }
+
+  #style li span:nth-child(4) {
+    top: 10px;
+    left: 10px;
+    height: calc(100% - 20px);
+  }
+
+  #style li span:nth-child(5) {
+    font-size: 18px;
+  }
+
   #head_spa {
     margin-bottom: max(10%, 240px);
   }
@@ -1145,7 +1193,6 @@ footer li {
     top: 78%;
   }
 
-
   #staff {
     width: 90%;
   }
@@ -1157,5 +1204,9 @@ footer li {
 
   .staff li img {
     width: 120px;
+  }
+
+  #blog {
+    margin-bottom: 100px;
   }
 }
