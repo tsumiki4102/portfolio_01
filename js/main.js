@@ -77,4 +77,12 @@
     open.classList.remove('hide');
     close.classList.remove('show');
   });
+
+  // ローディング画面
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      const loadingEl = document.querySelector('.loading');
+      loadingEl.classList.remove('loading_active');
+    }, 2000);
+  });
 }
