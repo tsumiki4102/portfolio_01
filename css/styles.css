@@ -73,14 +73,14 @@ dt {
   height: 100vh;
   background-color: #fff;
   z-index: 2;
-  visibility: hidden;
-  opacity: 0;
-  transition: .5s;
+  visibility: visible;
+  opacity: 1;
+  transition: 1s;
 }
 
 .loading.loading_active {
-  visibility: visible;
-  opacity: 1;
+  visibility: hidden;
+  opacity: 0;
 }
 
 #main_nav {
