@@ -82,7 +82,7 @@
   window.addEventListener("load", () => {
     setTimeout(() => {
       const loadingEl = document.querySelector('.loading');
-      loadingEl.classList.remove('loading_active');
-    }, 2000);
+      loadingEl.classList.add('loading_active');
+    }, 300);
   });
 }
