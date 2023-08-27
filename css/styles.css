@@ -64,6 +64,25 @@ dt {
   transform: none;
 }
 
+/* ローディング画面 */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+
+.loading.loading_active {
+  visibility: visible;
+  opacity: 1;
+}
+
 #main_nav {
   position: fixed;
   width: 100%;
